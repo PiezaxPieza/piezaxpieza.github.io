@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pieza x Pieza</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow:wght@400;600;700&display=swap">
+<style>
+/* Layout: una columna de lectura, cabecera con el bloque isométrico, secciones legales con ancla */
+:root{--bg:#F6F3EC;--fg:#14202F;--muted:#55606E;--line:#DCD5C6;--accent:#B98500;--card:#FFFFFF;
+--display:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;--body:'Barlow',system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A2B;--fg:#F3EDE0;--muted:#A7B0BC;--line:#22324A;--accent:#FFC53D;--card:#13233A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1A2B;--fg:#F3EDE0;--muted:#A7B0BC;--line:#22324A;--accent:#FFC53D;--card:#13233A;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:40px}
+header{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+header svg{width:84px;height:84px;flex:none}
+h1{font-family:var(--display);font-size:clamp(40px,8vw,64px);line-height:.95;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 b{color:var(--accent)}
+.lead{color:var(--muted);margin:6px 0 0}
+nav{display:flex;gap:12px;flex-wrap:wrap}
+nav a{color:var(--fg);text-decoration:none;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
+nav a:hover,nav a:focus-visible{border-color:var(--accent);outline:none}
+section{display:flex;flex-direction:column;gap:10px;border-top:1.5px solid var(--line);padding-top:24px}
+h2{font-family:var(--display);font-size:32px;margin:0;letter-spacing:.02em;text-transform:uppercase}
+h3{font-size:17px;margin:8px 0 0}
+p,ul{margin:0;max-width:65ch}
+ul{padding-left:20px}
+.en{color:var(--muted);font-size:15px}
+.meta{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head><body>
+<div class="wrap">
+<header>
+<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="#0B1524" stroke-width="2.5" stroke-linejoin="round">
+<path d="M50 52 L74 64 L50 76 L26 64Z" fill="#FFC53D"/><path d="M26 64 L50 76 L50 96 L26 84Z" fill="#E0A82E"/><path d="M50 76 L74 64 L74 84 L50 96Z" fill="#B98620"/>
+<path d="M50 30 L66 38 L50 46 L34 38Z" fill="#FFFFFF"/><path d="M34 38 L50 46 L50 60 L34 52Z" fill="#E4DDCD"/><path d="M50 46 L66 38 L66 52 L50 60Z" fill="#C2B9A5"/></g></svg>
+<div><h1>PIEZA <b>X</b> PIEZA</h1><p class="lead">Videos cortos que explican cómo funcionan las cosas: máquinas, ciencia, planetas y animales.</p></div>
+</header>
+<nav aria-label="Secciones"><a href="#acerca">Acerca</a><a href="#privacidad">Privacidad</a><a href="#terminos">Términos</a><a href="#contacto">Contacto</a></nav>
+
+<section id="acerca">
+<h2>Acerca</h2>
+<p>Pieza x Pieza es un canal de videos verticales en TikTok y YouTube. Cada video desarma una pieza o un fenómeno y lo explica paso a paso, con datos verificados en fuentes públicas.</p>
+<p>Para publicar sus propios videos usamos una herramienta interna, <strong>Pieza x Pieza Publicador</strong>, que sube a la cuenta del canal los videos que el creador ya revisó y aprobó.</p>
+<p class="en">Pieza x Pieza is a short-form explainer channel. "Pieza x Pieza Publicador" is an internal tool used only by the channel owner to upload videos he has reviewed and approved to his own accounts.</p>
+</section>
+
+<section id="privacidad">
+<h2>Política de privacidad</h2>
+<p class="meta">Vigente desde el 1 de noviembre de 2026</p>
+<h3>Qué datos usamos</h3>
+<ul><li>El token de acceso que TikTok o YouTube entregan cuando el dueño del canal autoriza la herramienta.</li><li>La información básica de la cuenta que la plataforma devuelve para publicar (nombre, opciones de privacidad disponibles).</li><li>Los videos, títulos y descripciones que el propio creador prepara.</li></ul>
+<h3>Para qué</h3>
+<p>Solo para subir y publicar los videos del canal en la cuenta del propio creador. No usamos los datos para publicidad, no los vendemos y no los compartimos con terceros.</p>
+<h3>Dónde se guardan</h3>
+<p>Los tokens se guardan solo en la computadora del creador, en un archivo con acceso restringido a su usuario. No hay servidores ni bases de datos externas. El creador puede revocar el acceso en cualquier momento desde la configuración de su cuenta de TikTok o Google, y borrar los archivos locales.</p>
+<h3>Datos de otras personas</h3>
+<p>La herramienta no accede a datos de seguidores ni de otras cuentas.</p>
+<p class="en">We only use the access token and basic account info returned by TikTok/YouTube to upload the creator's own approved videos to his own account. No data is sold, shared or used for ads. Tokens stay on the creator's computer and can be revoked at any time.</p>
+</section>
+
+<section id="terminos">
+<h2>Términos de uso</h2>
+<p class="meta">Vigentes desde el 1 de noviembre de 2026</p>
+<ul><li>Pieza x Pieza Publicador es una herramienta de uso privado del dueño del canal; no se ofrece al público.</li><li>Cada video se publica solo después de que el creador lo revisa y lo aprueba, con su título, descripción y nivel de privacidad.</li><li>El contenido cumple las normas de la comunidad de TikTok y YouTube y se etiqueta como generado con IA cuando corresponde.</li><li>El creador es responsable del contenido que publica.</li></ul>
+<p class="en">Private tool used only by the channel owner. Every post is published only after the creator reviews and approves it. Content follows each platform's community guidelines and is labeled as AI-generated when applicable.</p>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p>TikTok: <strong>@piezasxpiezas</strong> · YouTube: <strong>Pieza x Pieza</strong></p>
+<p>Correo: <strong>jp.claude427@gmail.com</strong></p>
+</section>
+</div>
+
+</body></html>
